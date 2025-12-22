@@ -1,0 +1,16 @@
+.homeSearchContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.homeImage {
+  width: 100%;
+  border-radius: 1rem;
+}
