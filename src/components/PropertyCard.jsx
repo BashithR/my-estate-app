@@ -9,7 +9,6 @@ import {
 } from "@chakra-ui/react";
 
 function PropertyCard({ property }) {
-  let propertyImgSrc = `../images/${property.id}/${property.id}.png`;
   return (
     <Box
       borderWidth="1px"
