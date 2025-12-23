@@ -3,7 +3,6 @@ import "./HomeSearch.css";
 import SearchIcon from "../assets/searchicon.png";
 
 function HomeSearch({ onSearch }) {
-  // State for each search field
   const [type, setType] = useState(""); // House, Flat, Any
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
@@ -39,14 +38,14 @@ function HomeSearch({ onSearch }) {
             <hr />
             <p>Search Properties to Buy</p>
             <form id="searchForm" onSubmit={handleSubmit}>
-              {/* Property Type Dropdown */}
+              {/* Property Type Dropdown */}{" "}
               <select onChange={(e) => setType(e.target.value)} value={type}>
-                <option value="">Property Type</option>
-                <option value="House">House</option>
-                <option value="Flat">Flat</option>
-                <option value="Any">Any</option>
+                {" "}
+                <option value="">Property Type</option>{" "}
+                <option value="House">House</option>{" "}
+                <option value="Flat">Flat</option>{" "}
+                <option value="Any">Any</option>{" "}
               </select>
-
               {/* Price Range Inputs */}
               <input
                 type="number"
@@ -62,7 +61,6 @@ function HomeSearch({ onSearch }) {
                 onChange={(e) => setMaxPrice(e.target.value)}
                 placeholder="Max Price"
               />
-
               {/* Bedrooms Range Inputs */}
               <input
                 type="number"
@@ -78,7 +76,6 @@ function HomeSearch({ onSearch }) {
                 onChange={(e) => setMaxBedrooms(e.target.value)}
                 placeholder="Max Bedrooms"
               />
-
               {/* Date Added */}
               <input
                 type="date"
@@ -86,7 +83,6 @@ function HomeSearch({ onSearch }) {
                 value={dateAdded}
                 onChange={(e) => setDateAdded(e.target.value)}
               />
-
               {/* Postcode Input */}
               <input
                 type="text"
@@ -95,7 +91,6 @@ function HomeSearch({ onSearch }) {
                 onChange={(e) => setPostcode(e.target.value)}
                 placeholder="Postcode"
               />
-
               {/* Submit Button */}
               <button className="searchBtn">Search</button>
             </form>
