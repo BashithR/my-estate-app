@@ -31,6 +31,87 @@
         "day": 14,
         "year": 2022
       }
+    },
+
+    {
+      "id": "prop3",
+      "type": "House",
+      "bedrooms": 4,
+      "price": 925000,
+      "tenure": "Freehold",
+      "description": "Spacious four bedroom detached family home located on a quiet residential road. The property features a large open-plan kitchen/dining area, separate living room, downstairs WC and integral garage. Upstairs offers four well-proportioned bedrooms including a master with en-suite, plus a modern family bathroom. The rear garden is well maintained and ideal for entertaining.",
+      "location": "Chislehurst Road, Chislehurst BR7",
+      "picture": "./assets/Home.png",
+      "url": "properties/prop3.html",
+      "added": {
+        "month": "November",
+        "day": 3,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop4",
+      "type": "Flat",
+      "bedrooms": 1,
+      "price": 275000,
+      "tenure": "Leasehold",
+      "description": "Well-presented one bedroom apartment situated close to local amenities and transport links. The property comprises an open-plan living/kitchen area with integrated appliances, a double bedroom with fitted wardrobes and a modern bathroom suite. Ideal for first-time buyers or investors.",
+      "location": "High Street, Orpington BR6",
+      "picture": "./assets/Home.png",
+      "url": "properties/prop4.html",
+      "added": {
+        "month": "August",
+        "day": 21,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop5",
+      "type": "House",
+      "bedrooms": 2,
+      "price": 450000,
+      "tenure": "Freehold",
+      "description": "Charming two bedroom terraced house offering bright and airy accommodation throughout. The ground floor features a cosy living room and modern fitted kitchen with access to a private rear garden. Upstairs includes two bedrooms and a contemporary bathroom. Conveniently located for schools and public transport.",
+      "location": "Tudor Way, Petts Wood BR5",
+      "picture": "./assets/Home.png",
+      "url": "properties/prop5.html",
+      "added": {
+        "month": "July",
+        "day": 9,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop6",
+      "type": "Flat",
+      "bedrooms": 3,
+      "price": 525000,
+      "tenure": "Leasehold",
+      "description": "A spacious three bedroom penthouse apartment offering panoramic views and modern living. The property benefits from a large living/dining area, fitted kitchen, three double bedrooms and two bathrooms. Additional features include allocated parking and lift access.",
+      "location": "Station Approach, Bromley BR2",
+      "picture": "./assets/Home.png",
+      "url": "properties/prop6.html",
+      "added": {
+        "month": "October",
+        "day": 28,
+        "year": 2022
+      }
+    },
+    {
+      "id": "prop7",
+      "type": "House",
+      "bedrooms": 5,
+      "price": 1200000,
+      "tenure": "Freehold",
+      "description": "Impressive five bedroom executive home set within a sought-after private development. The property offers multiple reception rooms, a high-spec kitchen, utility room and study. Upstairs features five bedrooms, two with en-suites, and a luxury family bathroom. Externally there is a double garage and landscaped garden.",
+      "location": "Manor Close, Bickley BR1",
+      "picture": "./assets/Home.png",
+      "url": "properties/prop7.html",
+      "added": {
+        "month": "December",
+        "day": 5,
+        "year": 2022
+      }
     }
   ]
 }
