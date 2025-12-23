@@ -18,7 +18,7 @@ function App() {
       <NavBar />
       <HomeSearch onSearch={setSearchData} />
       <h2>{search.type}</h2>
-      <Property props={search} />
+      <Property />
     </>
   );
 }
