@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 
 function PropertyCard({ property }) {
+  console.log(property.picture);
   return (
     <Box
       borderWidth="1px"
@@ -20,7 +21,7 @@ function PropertyCard({ property }) {
     >
       {/* Property Image */}
       <Image
-        src={property.id}
+        src={property.picture}
         alt={property.id}
         height="200px"
         width="100%"
