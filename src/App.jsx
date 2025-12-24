@@ -3,10 +3,14 @@ import NavBar from "./components/NavBar";
 import HomeSearch from "./components/HomeSearch";
 import Property from "./components/Property";
 import PropertyData from "./data/properties.json";
+import Favourites from "./components/FavouritesSidebar";
 
 import "./App.css";
+import PropertyGallery from "./components/PropertyGallery";
 
 function App() {
+  const [currentView, setCurrentView] = useState("Home");
+  const [propOption, setPropOption] = useState("");
   const [filteredProperties, setFilteredProperties] = useState(
     PropertyData.properties
   );
@@ -48,8 +52,23 @@ function App() {
   return (
     <>
       <NavBar />
-      <HomeSearch onSearch={handleSearch} />
-      <Property properties={filteredProperties} />
+      {currentView === "Home" ? (
+        <>
+          <HomeSearch onSearch={handleSearch} />
+          <Property
+            properties={filteredProperties}
+            currentView={currentView}
+            setCurrentView={setCurrentView}
+            propOption={propOption}
+            setPropOption={setPropOption}
+          />
+        </>
+      ) : (
+        <>
+          <PropertyGallery prop={propOption} setCurrentView={setCurrentView} />
+        </>
+      )}
+      <Favourites />
     </>
   );
 }

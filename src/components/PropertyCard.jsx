@@ -8,8 +8,16 @@ import {
   Badge,
 } from "@chakra-ui/react";
 
-function PropertyCard({ property }) {
-  console.log(property.picture);
+function PropertyCard({ property, setCurrentView, setPropOption }) {
+  const setViewGallery = () => {
+    setCurrentView("Gallery");
+    setPropOption(property.id);
+    if (currentView) {
+      console.log("No prop selected");
+    } else {
+      console.log();
+    }
+  };
   return (
     <Box
       borderWidth="1px"
@@ -43,7 +51,7 @@ function PropertyCard({ property }) {
 
           <Button
             as="a"
-            href={property.url}
+            onClick={() => setViewGallery()}
             colorScheme="teal"
             size="sm"
             alignSelf="flex-start"

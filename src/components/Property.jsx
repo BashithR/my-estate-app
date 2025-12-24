@@ -1,7 +1,7 @@
 import PropertyCard from "./PropertyCard";
 import { Box, Flex, SimpleGrid, Heading, Text } from "@chakra-ui/react";
 
-function Property({ properties }) {
+function Property({ properties, setCurrentView, setPropOption }) {
   if (!properties || properties.length === 0) {
     return (
       <Box py={6}>
@@ -18,7 +18,12 @@ function Property({ properties }) {
 
       <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={6}>
         {properties.map((property) => (
-          <PropertyCard key={property.id} property={property} />
+          <PropertyCard
+            key={property.id}
+            property={property}
+            setCurrentView={setCurrentView}
+            setPropOption={setPropOption}
+          />
         ))}
       </SimpleGrid>
     </Box>
