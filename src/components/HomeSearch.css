@@ -4,7 +4,7 @@
 }
 
 .container {
-  width: 70%;
+  width: 95%;
   height: auto;
   margin: 0 auto;
 }
@@ -34,6 +34,7 @@
 
 /* Search Container */
 .searchContainer {
+  width: 60%;
   padding: 1rem;
   border-radius: 1rem;
   backdrop-filter: blur(0.25rem);
@@ -95,7 +96,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
 }
 
 /* Gives full width*/
@@ -132,11 +133,19 @@
 }
 
 @media (max-width: 768px) {
+  .homeSearchContainer {
+    padding-top: 0rem;
+  }
+
   .container {
     width: 100%;
   }
   .innerContainer {
     border-radius: 0;
+  }
+
+  .searchContainer {
+    width: 100%;
   }
 
   #searchForm {
