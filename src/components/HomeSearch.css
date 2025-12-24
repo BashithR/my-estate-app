@@ -132,6 +132,13 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .innerContainer {
+    border-radius: 0;
+  }
+
   #searchForm {
     grid-template-columns: 1fr;
   }
