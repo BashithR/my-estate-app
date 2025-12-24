@@ -11,12 +11,7 @@ import {
 function PropertyCard({ property, setCurrentView, setPropOption }) {
   const setViewGallery = () => {
     setCurrentView("Gallery");
-    setPropOption(property.id);
-    if (currentView) {
-      console.log("No prop selected");
-    } else {
-      console.log();
-    }
+    setPropOption(property);
   };
   return (
     <Box

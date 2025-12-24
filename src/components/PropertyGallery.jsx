@@ -8,11 +8,14 @@ import {
   Badge,
 } from "@chakra-ui/react";
 
-function PropertyGallery({ prop, setCurrentView }) {
+function PropertyGallery({ property, setCurrentView }) {
   return (
     <>
       <h1>
-        Hi this is <b>{prop}</b>
+        Hi this is <b>{property.id}</b>
+      </h1>
+      <h1>
+        Hi this is <b>{property.type}</b>
       </h1>
       <Button
         as="a"

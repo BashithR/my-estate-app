@@ -10,7 +10,7 @@ import PropertyGallery from "./components/PropertyGallery";
 
 function App() {
   const [currentView, setCurrentView] = useState("Home");
-  const [propOption, setPropOption] = useState("");
+  const [propOption, setPropOption] = useState([]);
   const [filteredProperties, setFilteredProperties] = useState(
     PropertyData.properties
   );
@@ -65,7 +65,10 @@ function App() {
         </>
       ) : (
         <>
-          <PropertyGallery prop={propOption} setCurrentView={setCurrentView} />
+          <PropertyGallery
+            property={propOption}
+            setCurrentView={setCurrentView}
+          />
         </>
       )}
       <Favourites />
