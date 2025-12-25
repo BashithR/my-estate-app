@@ -113,17 +113,9 @@ function PropertyPage({ property, setCurrentView }) {
             </TabPanel>
             <TabPanel>
               <Heading size="md" mb={4}>
-                Google Map
+                Google Map Placeholder
               </Heading>
               {/* Embed Google Map (Replace with actual Google Map Embed Code) */}
-              <iframe
-                width="100%"
-                height="450"
-                frameBorder="0"
-                style={{ border: 0 }}
-                src={`https://www.google.com/maps/embed/v1/place?q=${property.location}&key=YOUR_GOOGLE_MAPS_API_KEY`}
-                allowFullScreen
-              ></iframe>
             </TabPanel>
           </TabPanels>
         </Tabs>
