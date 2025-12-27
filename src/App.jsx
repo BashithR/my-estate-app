@@ -88,7 +88,10 @@ function App() {
           />
         </>
       )}
-      <FavouritesSidebar />
+      <FavouritesSidebar
+        favourites={favourites}
+        removeFromFavourites={removeFromFavourites}
+      />
     </>
   );
 }

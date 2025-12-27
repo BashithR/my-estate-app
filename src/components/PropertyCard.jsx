@@ -13,6 +13,10 @@ function PropertyCard({ property, setCurrentView, setPropOption }) {
     setCurrentView("Gallery");
     setPropOption(property);
   };
+  const handleDragStart = (e) => {
+    e.dataTransfer.setData("property", JSON.stringify(property));
+  };
+
   return (
     <Box
       borderWidth="1px"
@@ -21,6 +25,9 @@ function PropertyCard({ property, setCurrentView, setPropOption }) {
       boxShadow="md"
       transition="transform 0.2s"
       _hover={{ transform: "translateY(-4px)", boxShadow: "lg" }}
+      draggable
+      onDragStart={handleDragStart}
+      cursor="grab"
     >
       {/* Property Image */}
       <Image

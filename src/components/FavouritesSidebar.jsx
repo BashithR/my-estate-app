@@ -11,8 +11,18 @@ import {
 } from "@chakra-ui/react";
 import { FaHeart } from "react-icons/fa";
 
-function FavouritesSidebar({ favourites, removeFromFavourites }) {
+function FavouritesSidebar({
+  favourites,
+  addToFavourites,
+  removeFromFavourites,
+}) {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    const property = JSON.parse(e.dataTransfer.getData("property"));
+    addToFavourites(property);
+  };
 
   return (
     <>
@@ -28,6 +38,8 @@ function FavouritesSidebar({ favourites, removeFromFavourites }) {
         borderRadius="full"
         zIndex={2}
         onClick={() => setIsOpen(!isOpen)}
+        onDragOver={(e) => e.preventDefault()}
+        onDrop={handleDrop}
       />
 
       {/* 👉 Sidebar */}
