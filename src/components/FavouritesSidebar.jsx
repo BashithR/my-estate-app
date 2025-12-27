@@ -10,11 +10,13 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { FaHeart } from "react-icons/fa";
+import { FaTrash } from "react-icons/fa";
 
 function FavouritesSidebar({
   favourites,
   addToFavourites,
   removeFromFavourites,
+  clearFavourites,
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -85,7 +87,7 @@ function FavouritesSidebar({
 
                 <Box flex="1">
                   <Text fontWeight="bold">{property.type}</Text>
-                  <Text fontSize="sm">£{property.price}</Text>
+                  <Text fontSize="sm">LKR {property.price}</Text>
                 </Box>
 
                 <Button
@@ -99,6 +101,18 @@ function FavouritesSidebar({
             ))}
           </Stack>
         )}
+        <Button
+          as="a"
+          onClick={() => clearFavourites()}
+          colorScheme="red"
+          size="sm"
+          position="fixed"
+          bottom="20px"
+          right="100px"
+          leftIcon={<FaTrash />}
+        >
+          Clear Favourites
+        </Button>
       </Box>
     </>
   );

@@ -65,6 +65,9 @@ function App() {
       favourites.filter((favourite) => property.id !== favourite.id)
     );
   };
+  const clearFavourites = () => {
+    setFavourites([]);
+  };
 
   return (
     <>
@@ -93,6 +96,7 @@ function App() {
         favourites={favourites}
         addToFavourites={addToFavourites}
         removeFromFavourites={removeFromFavourites}
+        clearFavourites={clearFavourites}
       />
     </>
   );
