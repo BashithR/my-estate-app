@@ -89,7 +89,7 @@ function FavouritesSidebar({
                 <Button
                   size="sm"
                   colorScheme="red"
-                  onClick={() => removeFromFavourites(property.id)}
+                  onClick={() => removeFromFavourites(property)}
                 >
                   Remove
                 </Button>
