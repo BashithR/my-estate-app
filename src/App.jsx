@@ -3,13 +3,14 @@ import NavBar from "./components/NavBar";
 import HomeSearch from "./components/HomeSearch";
 import Property from "./components/Property";
 import PropertyData from "./data/properties.json";
-import Favourites from "./components/FavouritesSidebar";
+import FavouritesSidebar from "./components/FavouritesSidebar";
 
 import "./App.css";
 import PropertyGallery from "./components/PropertyGallery";
 
 function App() {
   const [currentView, setCurrentView] = useState("Home");
+
   const [propOption, setPropOption] = useState([]);
   const [filteredProperties, setFilteredProperties] = useState(
     PropertyData.properties
@@ -49,6 +50,22 @@ function App() {
     setFilteredProperties(results);
   };
 
+  const [favourites, setFavourites] = useState([]);
+
+  const addToFavourites = (property) => {
+    setFavourites((proplist) => {
+      if (proplist.some((prop) => prop.id === property.id)) return proplist;
+      // otherwise return this with new property
+      return [...proplist, property];
+    });
+  };
+
+  const removeFromFavourites = (property) => {
+    setFavourites(
+      favourites.filter((favourite) => property.id !== favourite.id)
+    );
+  };
+
   return (
     <>
       <NavBar />
@@ -71,7 +88,7 @@ function App() {
           />
         </>
       )}
-      <Favourites />
+      <FavouritesSidebar />
     </>
   );
 }
