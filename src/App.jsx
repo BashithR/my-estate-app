@@ -78,6 +78,7 @@ function App() {
             setCurrentView={setCurrentView}
             propOption={propOption}
             setPropOption={setPropOption}
+            addToFavourites={addToFavourites}
           />
         </>
       ) : (
@@ -90,6 +91,7 @@ function App() {
       )}
       <FavouritesSidebar
         favourites={favourites}
+        addToFavourites={addToFavourites}
         removeFromFavourites={removeFromFavourites}
       />
     </>

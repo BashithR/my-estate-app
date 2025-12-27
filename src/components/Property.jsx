@@ -1,7 +1,12 @@
 import PropertyCard from "./PropertyCard";
 import { Box, Flex, SimpleGrid, Heading, Text } from "@chakra-ui/react";
 
-function Property({ properties, setCurrentView, setPropOption }) {
+function Property({
+  properties,
+  setCurrentView,
+  setPropOption,
+  addToFavourites,
+}) {
   if (!properties || properties.length === 0) {
     return (
       <Box py={6}>
@@ -23,6 +28,7 @@ function Property({ properties, setCurrentView, setPropOption }) {
             property={property}
             setCurrentView={setCurrentView}
             setPropOption={setPropOption}
+            addToFavorites={addToFavourites}
           />
         ))}
       </SimpleGrid>

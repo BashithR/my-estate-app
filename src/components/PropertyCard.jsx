@@ -7,8 +7,14 @@ import {
   Stack,
   Badge,
 } from "@chakra-ui/react";
+import { FaHeart } from "react-icons/fa";
 
-function PropertyCard({ property, setCurrentView, setPropOption }) {
+function PropertyCard({
+  property,
+  setCurrentView,
+  setPropOption,
+  addToFavorites,
+}) {
   const setViewGallery = () => {
     setCurrentView("Gallery");
     setPropOption(property);
@@ -51,15 +57,25 @@ function PropertyCard({ property, setCurrentView, setPropOption }) {
             {property.description}
           </Text>
 
-          <Button
-            as="a"
-            onClick={() => setViewGallery()}
-            colorScheme="teal"
-            size="sm"
-            alignSelf="flex-start"
-          >
-            View Details
-          </Button>
+          <Box display="flex" gap={2}>
+            <Button
+              as="a"
+              onClick={() => setViewGallery()}
+              colorScheme="teal"
+              size="sm"
+            >
+              View Details
+            </Button>
+            <Button
+              as="a"
+              onClick={() => addToFavorites(property)}
+              colorScheme="pink"
+              size="sm"
+              leftIcon={<FaHeart />}
+            >
+              Add to Favorites
+            </Button>
+          </Box>
         </Stack>
       </Box>
     </Box>
