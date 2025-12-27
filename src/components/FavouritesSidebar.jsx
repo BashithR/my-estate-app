@@ -56,6 +56,8 @@ function FavouritesSidebar({
         opacity={isOpen ? 1 : 0}
         transition="all 0.3s ease-in-out"
         p={4}
+        onDragOver={(e) => e.preventDefault()}
+        onDrop={handleDrop}
       >
         <Heading size="md" mb={4}>
           ❤️ Your Favourites
