@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./HomeSearch.css";
-import SearchIcon from "../assets/searchicon.png";
 import {
   Box,
   FormControl,
