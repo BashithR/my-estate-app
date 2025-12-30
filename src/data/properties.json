@@ -21,6 +21,7 @@
         "/prop1/Thumbnail.jpg"
       ],
       "url": "properties/prop1.html",
+      "floorPlan": "/FloorPlan.png",
       "added": {
         "month": "October",
         "day": 12,
@@ -48,6 +49,7 @@
         "/prop2/Thumbnail.jpg"
       ],
       "url": "properties/prop2.html",
+      "floorPlan": "/FloorPlan.png",
       "added": {
         "month": "September",
         "day": 14,
@@ -76,6 +78,7 @@
         "/prop3/Thumbnail.jpg"
       ],
       "url": "properties/prop3.html",
+      "floorPlan": "/FloorPlan.png",
       "added": {
         "month": "November",
         "day": 3,
@@ -103,6 +106,7 @@
         "/prop4/Thumbnail.jpg"
       ],
       "url": "properties/prop4.html",
+      "floorPlan": "/FloorPlan.png",
       "added": {
         "month": "August",
         "day": 21,
@@ -130,6 +134,7 @@
         "/prop5/Thumbnail.jpg"
       ],
       "url": "properties/prop5.html",
+      "floorPlan": "/FloorPlan.png",
       "added": {
         "month": "July",
         "day": 9,
@@ -157,6 +162,7 @@
         "/prop6/Thumbnail.jpg"
       ],
       "url": "properties/prop6.html",
+      "floorPlan": "/FloorPlan.png",
       "added": {
         "month": "October",
         "day": 28,
@@ -184,6 +190,7 @@
         "/prop7/Thumbnail.jpg"
       ],
       "url": "properties/prop7.html",
+      "floorPlan": "/FloorPlan.png",
       "added": {
         "month": "December",
         "day": 5,

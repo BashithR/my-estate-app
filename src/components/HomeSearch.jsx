@@ -44,13 +44,15 @@ function HomeSearch({ onSearch }) {
             <br /> Sri Lanka's largest choice of homes
           </p>
           <div className="searchContainer">
-            <p id="BuyHeading">Buy</p>
+            <p id="BuyHeading">Search Properties to Buy</p>
             <hr />
-            <p>Search Properties to Buy</p>
+            <br />
             <form id="searchForm" onSubmit={handleSubmit}>
-              {/* Property Type Dropdown */}{" "}
+              {/* Property Type Dropdown */}
               <FormControl>
-                <FormLabel color="white">Property Type</FormLabel>
+                <FormLabel fontWeight={"bold"} pl={3}>
+                  Property Type
+                </FormLabel>
                 <Select
                   placeholder="Select Property Type"
                   bg="white"
@@ -64,52 +66,62 @@ function HomeSearch({ onSearch }) {
               </FormControl>
               {/* Price Range Inputs */}
               <FormControl mt={{ base: 4, md: 0 }}>
-                <FormLabel color="white">Min Price</FormLabel>
+                <FormLabel fontWeight={"bold"} pl={3}>
+                  Min Price
+                </FormLabel>
                 <Input
                   type="number"
                   bg="white"
                   color="black"
                   value={minPrice}
                   onChange={(e) => setMinPrice(e.target.value)}
-                  placeholder="Min Price"
+                  placeholder="Example: 150000"
                 />
               </FormControl>
               <FormControl mt={{ base: 4, md: 0 }}>
-                <FormLabel color="white">Max Price</FormLabel>
+                <FormLabel fontWeight={"bold"} pl={3}>
+                  Max Price
+                </FormLabel>
                 <Input
                   type="number"
                   bg="white"
                   color="black"
                   onChange={(e) => setMaxPrice(e.target.value)}
-                  placeholder="Max Price"
+                  placeholder="Example: 2500000"
                 />
               </FormControl>
               {/* Bedrooms Range Inputs */}
               <FormControl>
-                <FormLabel color="white">Min Bedrooms</FormLabel>
+                <FormLabel fontWeight={"bold"} pl={3}>
+                  Min Bedrooms
+                </FormLabel>
                 <Input
                   type="number"
                   bg="white"
                   color="black"
                   value={minBedrooms}
                   onChange={(e) => setMinBedrooms(e.target.value)}
-                  placeholder="Min Bedrooms"
+                  placeholder="Example: 1"
                 />
               </FormControl>
               <FormControl mt={{ base: 4, md: 0 }}>
-                <FormLabel color="white">Max Bedrooms</FormLabel>
+                <FormLabel fontWeight={"bold"} pl={3}>
+                  Max Bedrooms
+                </FormLabel>
                 <Input
                   type="number"
                   bg="white"
                   color="black"
                   value={maxBedrooms}
                   onChange={(e) => setMaxBedrooms(e.target.value)}
-                  placeholder="Max Bedrooms"
+                  placeholder="Example: 5"
                 />
               </FormControl>
               {/* Date Added */}
               <FormControl>
-                <FormLabel color="white">Min Date Added</FormLabel>
+                <FormLabel fontWeight={"bold"} pl={3}>
+                  Min Date Added
+                </FormLabel>
                 <Input
                   type="date"
                   bg="white"
@@ -121,14 +133,16 @@ function HomeSearch({ onSearch }) {
               </FormControl>
               {/* Postcode Input */}
               <FormControl mt={{ base: 4, md: 0 }}>
-                <FormLabel color="white">Postcode</FormLabel>
+                <FormLabel fontWeight={"bold"} pl={3}>
+                  Postcode
+                </FormLabel>
                 <Input
                   bg="white"
                   color="black"
                   name="postcode"
                   value={postcode}
                   onChange={(e) => setPostcode(e.target.value)}
-                  placeholder="Postcode"
+                  placeholder="Example: BR1"
                 />
               </FormControl>
               {/* Submit Button */}

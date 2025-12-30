@@ -29,7 +29,8 @@
 
 #specialText {
   font-size: 2.5rem;
-  color: aqua;
+  font-weight: bold;
+  color: teal;
 }
 
 /* Search Container */
@@ -44,6 +45,7 @@
 
 #BuyHeading {
   font-size: 1.25rem;
+  text-align: center;
   margin: 0;
 }
 
@@ -55,7 +57,7 @@
   gap: 0.5rem;
 }
 
-#searchBar {
+/* #searchBar {
   flex: 1;
   display: flex;
   align-items: center;
@@ -63,15 +65,15 @@
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   padding: 0.5rem;
-}
+} */
 
-#searchBar img {
+/* #searchBar img {
   width: 1.5rem;
   height: auto;
   margin-right: 0.5rem;
-}
+} */
 
-#searchBar input {
+/* #searchBar input {
   flex: 1;
   border: none;
   outline: none;
@@ -90,7 +92,7 @@
 
 .searchBtn:hover {
   background-color: #0056b3;
-}
+} */
 
 #searchForm {
   display: grid;
@@ -99,10 +101,9 @@
   max-width: 1200px;
 }
 
-/* Gives full width*/
-#searchForm select {
+/* #searchForm select {
   grid-column: 1 / -1;
-}
+} */
 
 /* Input & select field styling */
 #searchForm input,

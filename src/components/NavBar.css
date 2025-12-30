@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+
 .header {
   width: 80%;
   margin: 0 auto;
@@ -9,7 +11,11 @@
 }
 
 .logoText {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-family: "Bonheur Royale" !important;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  font-style: italic;
 }
 
 .signInBtn {
