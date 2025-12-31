@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import HomeSearch from "../components/HomeSearch";
 import { ChakraProvider } from "@chakra-ui/react";
 
-test("renders all form elements and the search button", () => {
+test("Renders all form elements and the search button", () => {
   const mockOnSearch = jest.fn();
 
   render(

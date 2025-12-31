@@ -73,7 +73,7 @@ function PropertyCard({
               size="sm"
               leftIcon={<FaHeart />}
             >
-              Add to Favorites
+              Add to Favourites
             </Button>
           </Box>
         </Stack>
