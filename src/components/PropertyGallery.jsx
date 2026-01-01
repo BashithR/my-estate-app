@@ -106,16 +106,10 @@ function PropertyPage({ property, setCurrentView }) {
               <Text>{property.description}</Text>
             </TabPanel>
             <TabPanel>
-              <Heading size="md" mb={4}>
-                Floor Plan
-              </Heading>
               <Image src={property.floorPlan} alt="Floor Plan" />
             </TabPanel>
             <TabPanel>
-              <Heading size="md" mb={4}>
-                Google Map Placeholder
-              </Heading>
-              {/* Embed Google Map (Replace with actual Google Map Embed Code) */}
+              <Image src={property.googleMap} alt="Floor Plan" />
             </TabPanel>
           </TabPanels>
         </Tabs>

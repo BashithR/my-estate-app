@@ -7,6 +7,7 @@ import FavouritesSidebar from "./components/FavouritesSidebar";
 
 import "./App.css";
 import PropertyGallery from "./components/PropertyGallery";
+import Footer from "./components/Footer";
 
 function App() {
   const [currentView, setCurrentView] = useState("Home");
@@ -98,6 +99,7 @@ function App() {
         removeFromFavourites={removeFromFavourites}
         clearFavourites={clearFavourites}
       />
+      <Footer />
     </>
   );
 }
