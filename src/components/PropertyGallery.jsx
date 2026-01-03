@@ -66,7 +66,7 @@ function PropertyPage({ property, setCurrentView }) {
             />
           </Box>
 
-          {/* Thumbnails */}
+          {/* Thumbnails images*/}
           <Box flex={0.75} ml={{ base: 0, md: 4 }}>
             <SimpleGrid columns={{ base: 3, md: 4, lg: 3 }} spacing={4}>
               {property.images.map((image, index) => (

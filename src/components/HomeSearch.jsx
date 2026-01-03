@@ -149,7 +149,7 @@ function HomeSearch({ onSearch }) {
               <Button
                 colorScheme="teal"
                 width="100%"
-                mt={{ base: 4, md: 0, lg: 8 }}
+                mt={{ base: 4, md: 8, lg: 8 }}
                 type="submit"
               >
                 Search
