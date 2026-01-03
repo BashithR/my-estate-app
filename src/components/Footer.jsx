@@ -11,10 +11,6 @@ function Footer() {
         justify="space-between"
         align="center"
       >
-        {/* Left side */}
-        <Text fontSize="sm">© 2025 Destiny. All rights reserved.</Text>
-
-        {/* Right side links */}
         <Stack direction="row" spacing={6} mt={{ base: 4, md: 0 }}>
           <Link href="#" _hover={{ color: "teal.300" }}>
             About
@@ -26,6 +22,8 @@ function Footer() {
             Privacy Policy
           </Link>
         </Stack>
+
+        <Text fontSize="sm">© 2025 Destiny. All rights reserved.</Text>
       </Flex>
     </Box>
   );

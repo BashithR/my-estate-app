@@ -28,7 +28,7 @@ function FavouritesSidebar({
 
   return (
     <>
-      {/* ❤️ Fixed Heart Button */}
+      {/* Fixed Heart Button */}
       <IconButton
         icon={<FaHeart />}
         colorScheme="pink"
@@ -44,7 +44,7 @@ function FavouritesSidebar({
         onDrop={handleDrop}
       />
 
-      {/* 👉 Sidebar */}
+      {/* Sidebar */}
       <Box
         position="fixed"
         top="0"

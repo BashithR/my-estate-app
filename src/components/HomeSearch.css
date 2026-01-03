@@ -90,9 +90,7 @@
   font-size: 1rem;
 }
 
-.searchBtn:hover {
-  background-color: #0056b3;
-} */
+*/
 
 #searchForm {
   display: grid;
@@ -101,11 +99,6 @@
   max-width: 1200px;
 }
 
-/* #searchForm select {
-  grid-column: 1 / -1;
-} */
-
-/* Input & select field styling */
 #searchForm input,
 #searchForm select {
   padding: 10px 12px;
@@ -123,7 +116,7 @@
 /* Submit button */
 #searchForm button {
   padding: 12px 0;
-  background-color: #2c7a7b;
+  background-color: teal;
   color: white;
   border: none;
   border-radius: 2rem;
@@ -131,6 +124,10 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   max-width: 100px;
+}
+
+#searchForm button:hover {
+  background-color: blue;
 }
 
 @media (max-width: 768px) {

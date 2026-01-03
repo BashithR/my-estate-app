@@ -1,15 +1,11 @@
 import { useState } from "react";
 import "./HomeSearch.css";
 import {
-  Box,
   FormControl,
   FormLabel,
   Input,
   Select,
   Button,
-  Heading,
-  Flex,
-  Image,
 } from "@chakra-ui/react";
 
 function HomeSearch({ onSearch }) {
@@ -64,6 +60,7 @@ function HomeSearch({ onSearch }) {
                   <option value="Flat">Flat</option>
                 </Select>
               </FormControl>
+
               {/* Price Range Inputs */}
               <FormControl mt={{ base: 4, md: 0 }}>
                 <FormLabel fontWeight={"bold"} pl={3}>
@@ -90,6 +87,7 @@ function HomeSearch({ onSearch }) {
                   placeholder="Example: 2500000"
                 />
               </FormControl>
+
               {/* Bedrooms Range Inputs */}
               <FormControl>
                 <FormLabel fontWeight={"bold"} pl={3}>
@@ -117,6 +115,7 @@ function HomeSearch({ onSearch }) {
                   placeholder="Example: 5"
                 />
               </FormControl>
+
               {/* Date Added */}
               <FormControl>
                 <FormLabel fontWeight={"bold"} pl={3}>
@@ -128,9 +127,9 @@ function HomeSearch({ onSearch }) {
                   color="black"
                   value={dateAdded}
                   onChange={(e) => setDateAdded(e.target.value)}
-                  // Ensure the user cannot pick a future date
                 />
               </FormControl>
+
               {/* Postcode Input */}
               <FormControl mt={{ base: 4, md: 0 }}>
                 <FormLabel fontWeight={"bold"} pl={3}>
@@ -145,6 +144,7 @@ function HomeSearch({ onSearch }) {
                   placeholder="Example: BR1"
                 />
               </FormControl>
+
               {/* Submit Button */}
               <Button
                 colorScheme="teal"

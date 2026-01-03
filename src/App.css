@@ -8,11 +8,3 @@
 main {
   padding: 30px;
 }
-
-/* Media query for mobile screens */
-@media (max-width: 767px) {
-  .favorites {
-    order: -1;
-    width: 100%;
-  }
-}

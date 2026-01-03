@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 
 function PropertyPage({ property, setCurrentView }) {
-  // State to handle the selected image from the thumbnails
+  // State for selected image for the thumbnails
   const [selectedImage, setSelectedImage] = useState(property.picture);
 
   // Function to handle thumbnail click
