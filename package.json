@@ -1,5 +1,5 @@
 {
-  "homepage": "https://BashithR.github.io/my-estate-app",
+  "homepage": "https://bashithr.github.io/my-estate-app",
   "name": "my-estate-app",
   "private": true,
   "version": "0.0.0",
@@ -10,8 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "jest",
-    "predeploy": "npm run deploy",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",
